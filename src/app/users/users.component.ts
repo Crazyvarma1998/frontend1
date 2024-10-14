@@ -19,6 +19,9 @@ constructor(private http:HttpClient,private router:Router){
 
 }
 ngOnInit(): void {
+  this.test()
+}
+test(){
   var link = this.userService.apiurl + "/users";
   this.http.get(link).subscribe(async (response) => {
   this.result = response
