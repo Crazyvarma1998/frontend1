@@ -47,7 +47,7 @@ submit(){
     this.http.post(link, check, { headers: { 'Content-Type': 'application/json' } })
     .subscribe(async (response) => { 
         // ... handle response
-        this.router.navigate(["/users"])
+        this.router.navigate(["/"])
     });
 
     
